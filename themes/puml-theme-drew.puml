@@ -9,3 +9,116 @@
 
 !$BGCOLOR = $WHITE
 !$FGCOLOR = $BLACK
+
+!ifndef $FONT_NAME
+  !$FONT_NAME = "Verdana"
+!endif
+
+!ifndef $FONT_NAME_MONOSPACED
+  !$FONT_NAME_MONOSPACED = "Courier"
+!endif
+
+<style>
+  root {
+    BackgroundColor $BGCOLOR
+    FontColor $FGCOLOR
+    FontName $FONT_NAME
+    HyperLinkColor $ORANGE
+    LineColor $FGCOLOR
+    LineThickness 1
+    Margin 5
+  }
+  document {
+    caption {
+      LineThickness 0
+    }
+    footer {
+      LineThickness 0
+    }
+    header {
+      LineThickness 0
+    }
+    title {
+      FontSize 22
+      LineThickness 0
+    }
+  }
+  groupHeader {
+    BackgroundColor $FGCOLOR
+    FontColor $BGCOLOR
+    FontStyle bold
+  }
+  node {
+    MaximumWidth 300
+  }
+  referenceHeader {
+    BackgroundColor $FGCOLOR
+    FontColor $BGCOLOR
+    FontStyle bold
+  }
+  separator {
+    BackgroundColor $FGCOLOR
+    FontColor $BGCOLOR
+    FontStyle bold
+  }
+</style>
+
+skinparam ArrowLollipopColor $FGCOLOR
+skinparam BackgroundColor $BGCOLOR
+skinparam DefaultFontName $FONT_NAME
+skinparam DefaultMonospacedFontName $FONT_NAME_MONOSPACED
+skinparam LifelineStrategy nosolid
+skinparam ParticipantPadding 10
+skinparam SequenceLifeLineBorderColor $FGCOLOR
+skinparam Shadowing false
+skinparam UseBetaStyle true
+
+skinparam Boundary {
+  FontColor $FGCOLOR
+}
+skinparam Box {
+  Padding 5
+}
+skinparam Footer {
+  FontColor $FGCOLOR
+  FontName $FONT_NAME
+}
+skinparam Header {
+  FontColor $FGCOLOR
+  FontName $FONT_NAME
+}
+skinparam Hyperlink {
+  Color $ORANGE
+}
+skinparam IconPackage {
+  Color $FGCOLOR
+  BackgroundColor $BGCOLOR
+}
+skinparam IconPrivate {
+  Color $FGCOLOR
+  BackgroundColor $BGCOLOR
+}
+skinparam IconProtected {
+  Color $FGCOLOR
+  BackgroundColor $BGCOLOR
+}
+skinparam IconPublic {
+  Color $FGCOLOR
+  BackgroundColor $BGCOLOR
+}
+skinparam Note {
+  FontColor $FGCOLOR
+  FontName $FONT_NAME
+}
+skinparam Object {
+  BorderColor $FGCOLOR
+}
+skinparam Package {
+  BorderColor $FGCOLOR
+  FontColor $FGCOLOR
+  FontName $FONT_NAME
+}
+skinparam State {
+  BackgroundColor $BGCOLOR
+  BorderColor $FGCOLOR
+}
