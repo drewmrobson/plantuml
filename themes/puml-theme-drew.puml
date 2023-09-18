@@ -1,15 +1,17 @@
-
 !$THEME = "drew"
 
 !$BLACK  = "#000121"
 !$WHITE  = "#FFFFFF"
+!$BLUE = "blue"
+!$YELLOW = "yellow"
 
 !$BGCOLOR = $WHITE
 !$FGCOLOR = $BLACK
 
-!ifndef $FONT_NAME
-  !$FONT_NAME = "Verdana"
-!endif
+'!ifndef $FONT_NAME
+'  !$FONT_NAME = "Segoe UI"
+'!endif
+!$FONT_NAME = "Segoe UI"
 
 !ifndef $FONT_NAME_MONOSPACED
   !$FONT_NAME_MONOSPACED = "Courier"
@@ -20,30 +22,35 @@
     BackgroundColor $BGCOLOR
     FontColor $FGCOLOR
     FontName $FONT_NAME
-    HyperLinkColor $ORANGE
+    HyperLinkColor $YELLOW
     LineColor $FGCOLOR
     LineThickness 1
-    Margin 5
+    Margin 3
+    Padding 3
   }
   document {
     caption {
+      FontSize 10
       LineThickness 0
     }
     footer {
+      FontSize 10
       LineThickness 0
+      Margin 0
     }
     header {
+      FontSize 10
       LineThickness 0
     }
     title {
-      FontSize 22
+      FontSize 16
       LineThickness 0
     }
   }
   groupHeader {
     BackgroundColor $FGCOLOR
     FontColor $BGCOLOR
-    FontStyle bold
+    FontStyle normal
   }
   node {
     MaximumWidth 300
@@ -51,12 +58,12 @@
   referenceHeader {
     BackgroundColor $FGCOLOR
     FontColor $BGCOLOR
-    FontStyle bold
+    FontStyle normal
   }
   separator {
     BackgroundColor $FGCOLOR
     FontColor $BGCOLOR
-    FontStyle bold
+    FontStyle normal
   }
 </style>
 
@@ -65,10 +72,18 @@ skinparam BackgroundColor $BGCOLOR
 skinparam DefaultFontName $FONT_NAME
 skinparam DefaultMonospacedFontName $FONT_NAME_MONOSPACED
 skinparam LifelineStrategy nosolid
-skinparam ParticipantPadding 10
+skinparam ParticipantPadding 5
 skinparam SequenceLifeLineBorderColor $FGCOLOR
 skinparam Shadowing false
 skinparam UseBetaStyle true
+'skinparam SequenceParticipant
+skinparam SequenceParticipantBorderThickness 1
+skinparam SequenceReferenceHeaderBackgroundColor $BGCOLOR
+skinparam SequenceNewpageSeparatorColor red
+skinparam SequenceMessageAlignment right
+skinparam SequenceMessageTextAlignment right
+skinparam SequenceActorBorderThickness 1
+skinparam SequenceArrowThickness 1
 
 skinparam Boundary {
   FontColor $FGCOLOR
@@ -85,7 +100,7 @@ skinparam Header {
   FontName $FONT_NAME
 }
 skinparam Hyperlink {
-  Color $ORANGE
+  Color $YELLOW
 }
 skinparam IconPackage {
   Color $FGCOLOR
@@ -110,15 +125,124 @@ skinparam Note {
 skinparam Object {
   BorderColor $FGCOLOR
 }
+
 skinparam Package {
   BorderColor $FGCOLOR
   FontColor $FGCOLOR
   FontName $FONT_NAME
 }
+
 skinparam State {
   BackgroundColor $BGCOLOR
   BorderColor $FGCOLOR
 }
 
-skinparam SequenceActorBorderThickness 10
-skinparam SequenceArrowThickness 10
+'''''''''''
+skinparam SequenceDelay {
+  BorderThickness 1
+  BorderColor red
+  BackgroundColor $BGCOLOR
+  Alignment right
+
+  FontColor $FGCOLOR
+  FontName $FONT_NAME
+  FontSize 10
+  FontStyle normal
+}
+
+skinparam SequenceBox {
+  BorderThickness 1
+  BorderColor $BLUE
+  BackgroundColor $BGCOLOR
+  Alignment right
+
+  FontColor $FGCOLOR
+  FontName $FONT_NAME
+  FontSize 10
+  FontStyle normal
+}
+
+skinparam SequenceLifeLine  {
+  BorderThickness 1
+  BorderColor $BLUE
+  BackgroundColor $BGCOLOR
+  Alignment right
+
+  FontColor $FGCOLOR
+  FontName $FONT_NAME
+  FontSize 10
+  FontStyle normal
+}
+
+skinparam SequenceGroupHeader {
+  BorderThickness 1
+  BorderColor red
+  BackgroundColor $BGCOLOR
+  Alignment right
+
+  FontColor $FGCOLOR
+  FontName $FONT_NAME
+  FontSize 10
+  FontStyle normal
+}
+
+skinparam SequenceDelay {
+  BorderThickness 1
+  BorderColor red
+  BackgroundColor $BGCOLOR
+  Alignment right
+
+  FontColor $FGCOLOR
+  FontName $FONT_NAME
+  FontSize 10
+  FontStyle normal
+}
+
+skinparam SequenceDivider {
+  BorderThickness 1
+  BorderColor red
+  BackgroundColor $BGCOLOR
+  Alignment right
+
+  FontColor $FGCOLOR
+  FontName $FONT_NAME
+  FontSize 10
+  FontStyle normal
+}
+
+skinparam SequenceReference {
+
+  BorderThickness 1
+  BorderColor red
+  BackgroundColor $BGCOLOR
+  Alignment right
+
+  FontColor $FGCOLOR
+  FontName $FONT_NAME
+  FontSize 10
+  FontStyle normal
+}
+
+skinparam SequenceStereotype {
+  BorderThickness 1
+  BorderColor red
+  BackgroundColor $BGCOLOR
+  Alignment right
+
+  FontColor $FGCOLOR
+  FontName $FONT_NAME
+  FontSize 10
+  FontStyle normal
+}
+
+skinparam SequenceTitle {
+  BorderThickness 1
+  BorderColor red
+  BackgroundColor $BGCOLOR
+  Alignment right
+
+  FontColor $FGCOLOR
+  FontName $FONT_NAME
+  FontSize 10
+  FontStyle normal
+}
