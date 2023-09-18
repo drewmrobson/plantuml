@@ -119,3 +119,6 @@ skinparam State {
   BackgroundColor $BGCOLOR
   BorderColor $FGCOLOR
 }
+
+SequenceActorBorderThickness 10
+SequenceArrowThickness 10
