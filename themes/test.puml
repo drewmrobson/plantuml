@@ -1,1 +1,11 @@
 
+!$THEME = "drew"
+
+!$BLACK  = "#000121"
+!$BLUE   = "#0B58A8"
+!$ORANGE = "#FDA325"
+!$RED    = "#DB252B"
+!$WHITE  = "#FFFFFF"
+
+!$BGCOLOR = $WHITE
+!$FGCOLOR = $BLACK
