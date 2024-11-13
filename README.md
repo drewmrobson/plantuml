@@ -1,6 +1,6 @@
 # Overview
 
-PlantUML is a fantastic modeling language for UML diagrams. Puml.dev is an easy web editor to get started with but doesn't provide examples or themes. This repo is to just that.
+PlantUML is a fantastic modeling language for UML diagrams. [Puml.dev](https://www.puml.dev/) is a great online editor to get started with but doesn't provide examples or themes. This repo is to provide some of these.
 
 ## Further Reading
 
@@ -8,11 +8,11 @@ PlantUML is a fantastic modeling language for UML diagrams. Puml.dev is an easy 
 - [PlantUML](https://plantuml.com/)
 - [puml.dev](https://www.puml.dev/)
 
-# Examples
+## Examples
 
 See `examples` folder for `.puml` files of common UML diagrams.
 
-# Themes
+## Themes
 
 See `themes` folder for `.puml` files of themes which can be applied as follows in your PlantUML diagram.
 
